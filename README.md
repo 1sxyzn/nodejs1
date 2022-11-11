@@ -7,4 +7,7 @@
 
 ## Node.js
 - input : `var args = process.argv;` `console.log(args[2]);` 로 입력값 출력 가능 (임시방편..)
-- queryData.get('id') : queryData.id 는 작동하지 않으므로 id 값을 쿼리에서 가져올 때 .get('id')를 쓰자
+- `var queryData = new URL('http://localhost:3000' + _url).searchParams;`  
+    `var queryDataId = queryData.get('id')` 을 할 경우 id가 없으면 null (사용)   
+    `var queryData = url.parse(_url, true).query;`  
+    `var queryDataId = queryData.id` 을 할 경우 id가 없으면 undefined (사용 X)  
