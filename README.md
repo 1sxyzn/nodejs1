@@ -11,3 +11,5 @@
     `var queryDataId = queryData.get('id')` 을 할 경우 id가 없으면 null (사용)   
     `var queryData = url.parse(_url, true).query;`  
     `var queryDataId = queryData.id` 을 할 경우 id가 없으면 undefined (사용 X)  
+- Node.js 에서의 비동기 (asynchronous)  
+    
