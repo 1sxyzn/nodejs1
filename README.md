@@ -12,4 +12,9 @@
     `var queryData = url.parse(_url, true).query;`  
     `var queryDataId = queryData.id` 을 할 경우 id가 없으면 undefined (사용 X)  
 - Node.js 에서의 비동기 (asynchronous)  
+- package manager NPM 를 통해 pm2 사용하기
+    `npm install pm2 -g` : 설치  
+    `pm2 start main.js --watch` : 실행 및 수정 실시간 반영  
+    `pm2 stop main` : 중지  
+
     
