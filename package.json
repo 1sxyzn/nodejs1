@@ -1,0 +1,25 @@
+{
+  "name": "web2",
+  "version": "1.0.0",
+  "description": "- var : 변수 선언\r - literal : 데이터를 표현하는 방식\r - template literal : \\`content ${variable} content\\` 를 사용하여 표현 가능, 줄바꿈도 자동으로 인식",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1sxyzn/nodejs1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1sxyzn/nodejs1/issues"
+  },
+  "homepage": "https://github.com/1sxyzn/nodejs1#readme",
+  "dependencies": {
+    "sanitize-html": "^2.7.3"
+  }
+}
