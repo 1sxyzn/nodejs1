@@ -6,7 +6,7 @@ var template = require('./lib/template.js');
 var path = require('path');
 var sanitizeHtml = require('sanitize-html');
 
-var app = http.createServer(function(request,response){
+var app = http.createServer(function(request,response){  // 웹 서버 생성
     var _url = request.url;
     var queryData = new URL('http://localhost:3000' + _url).searchParams;
     var pathname = url.parse(_url, true).pathname;
@@ -148,4 +148,4 @@ var app = http.createServer(function(request,response){
       response.end('Not found');
     }
 });
-app.listen(3000);
+app.listen(3000); // 요청에 대해 응답할 수 있도록 Http 서버 구동시키는 API, 3000번 port 이용
